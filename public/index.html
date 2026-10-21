@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Globo cenital</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<canvas id="canvas" width="800" height="800"></canvas>
+
+<div id="overlay">
+  <!-- Formulario de entrada -->
+  <div id="joinBox">
+    <b>Globo cenital</b>
+    <input id="nameInput" placeholder="Tu nombre" maxlength="12">
+    <input id="roomInput" placeholder="Código de sala" maxlength="12" value="sala1">
+    <button id="joinBtn">Entrar</button>
+  </div>
+  <!-- Sala de espera -->
+  <div id="lobbyBox" class="hidden">
+    <b id="roomTitle"></b>
+    <span id="lobbyInfo"></span>
+    <button id="startBtn">Empezar partida</button>
+  </div>
+</div>
+
+<script src="/js/client.js"></script>
+</body>
+</html>

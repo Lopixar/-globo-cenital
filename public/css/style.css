@@ -1,0 +1,26 @@
+  html, body {
+    margin: 0; height: 100%;
+    background: #0b111a; color: #e8eef6;
+    font: 16px system-ui, sans-serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  /* El canvas es cuadrado y ocupa el máximo posible de la ventana */
+  canvas { width: min(100vw, 100vh); height: min(100vw, 100vh); display: block; }
+
+  /* Pantalla de entrada / sala de espera */
+  #overlay {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: #0b111acc;
+  }
+  #overlay > div {
+    background: #17222f; padding: 24px; border-radius: 12px;
+    display: flex; flex-direction: column; gap: 10px; min-width: 260px;
+  }
+  input, button {
+    font: inherit; padding: 8px; border-radius: 6px;
+    border: 1px solid #345; background: #0e1621; color: inherit;
+  }
+  button { background: #2f7be0; border: 0; cursor: pointer; }
+  button:disabled { opacity: .4; cursor: default; }
+  .hidden { display: none !important; }
